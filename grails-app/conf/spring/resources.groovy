@@ -6,17 +6,17 @@ beans = {
     xmlns amq:"http://activemq.apache.org/schema/core"
 
     amq.'broker'(
-            useJmx:'false',
-            persistent:'true',
+            useJmx: '${grails.jms.useJmx}',//'false',
+            persistent:'${grails.jms.persistent}',
             //change this to use some other directory for data
-            dataDirectory: 'my-activemq-data'){
+            dataDirectory: '${grails.jms.dataDirectory}'){
         amq.'transportConnectors'{
-            amq.'transportConnector'(uri:'tcp://localhost:61616')
+            amq.'transportConnector'(uri:'${grails.jms.transportConnector}')
         }
     }
 
     amqConnectionFactory(ActiveMQConnectionFactory) {
-        brokerURL = "vm://localhost"
+        brokerURL = '${grails.jms.brokerUrl}'
     }
 
     jmsConnectionFactory(SingleConnectionFactory) {

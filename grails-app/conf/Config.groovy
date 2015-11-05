@@ -93,4 +93,12 @@ log4j = {
         additivity = true
     }
 }
-
+grails{
+    jms{
+        useJmx = false
+        persistent = true
+        brokerUrl = 'vm://localhost'
+        transportConnector = 'tcp://localhost:61616'
+        dataDirectory = 'my-activemq-data'
+    }
+}
