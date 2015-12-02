@@ -12,6 +12,6 @@
 </head>
 
 <body>
-<h1>Hello World! JMS Sample This is Development branch</h1>
+<h1>Hello World! JMS Sample This is Staging change</h1>
 </body>
 </html>
