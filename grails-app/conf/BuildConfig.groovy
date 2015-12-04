@@ -23,8 +23,7 @@ grails.project.dependency.resolution = {
 
     repositories {
         mavenCentral()
-       // mavenRepo "http://nexus.rainkingonline.com/content/groups/rainking/"
-    }
+        }
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
